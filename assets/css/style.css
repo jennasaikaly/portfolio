@@ -34,7 +34,7 @@
        }
    header nav ul {
        display: flex;
-       flex-wrap: wrap;
+       flex-flow: wrap;
        list-style: none;
        justify-content: space-between;
            }
@@ -63,31 +63,67 @@
        color: black;
    }
 
-   .about-me {
-       display: flex;
-       flex-wrap: row wrap;
-       margin-bottom:10px;
-    
-}
-.flex-row {
-    width:20%;
+   .flex-row {
+    flex: 0 0 20%;
     border-right: solid 2px black;
-}
+    margin-right: 20px;
+    max-width: 20%;
+   }
 
-.section-title {
+.sites{
+    background-color: purple;
+    align-items: stretch;
+
+}
+    .section-title {
     font-size:5vw;
     color: black;
     width: 20%;
-    text-align: right;
     margin:0;
     padding: 20px;
     }
+   .about-me {
+       display: flex;
+       flex-flow: row wrap;
+       margin-bottom:10px;
+    }
 
-.about-me-text {
-    width:70%;
+    .about-me-text {
+        flex: 1 0 20%;
+        font-size: 2vw;
+        }
+
+.portfolio {
+    display:flex;
+    flex-flow: row wrap;
+}
+
+.sites {
+    flex: 0 0 20%;
+    border-right: solid 2px black;
+
+}
+.site {
+    flex: 1 0 20%;
+}
+
+.site img {
+    max-width: 35vw;
+    height: 20vw;
+}
+
+.contact-me {
+    display: flex;
+    flex-flow: row wrap;
+    }
+
+.contact {
+    flex: 1 0 70%;
     margin-left: 20px;
     font-size: 2vw;
-    }
+}
+ 
+
 
 
 
