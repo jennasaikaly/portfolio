@@ -87,6 +87,7 @@ header nav ul {
 
     .about-me {
     padding: 20px;  
+    scroll-margin-top: 10em;
     }
 
     .about {
@@ -97,6 +98,7 @@ header nav ul {
     .portfolio {
         display: flex;
         flex-direction:column;
+        scroll-margin-top: 10em;
     }
 .projects {
     margin: 0 auto;
@@ -166,6 +168,7 @@ header nav ul {
     display: flex;
     flex-flow: row wrap;
 justify-content: center;  
+scroll-margin-top: 10em;
  }
 
 .contact ul {
@@ -183,6 +186,15 @@ justify-content: center;
 
     @media screen and (min-width: 575px) {
 
+
+        .about-me {
+            scroll-margin-top: 7em;
+        }
+
+        .portfolio {
+            scroll-margin-top: 7em;
+            
+        }
         .contact-me {
             justify-content: flex-start;
         }
