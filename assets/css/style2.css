@@ -99,28 +99,24 @@ header nav ul {
         flex-direction:column;
     }
 .projects {
-    width: 100%;
     margin: 0 auto;
     padding: 5px;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-around;
-}
-.portfolio img {
-    max-width: 100%;
-    max-height: 20vw;
+  
 }
 
 .project {
-    max-width: 100%;
-    max-height: auto;
+    max-height: 50vw;
     position: relative;
     color: var(--primary-color); 
-   display: flex;
+    
+}
+    .project img {
+        max-width: 100%;
+        max-height: 30vw;
+        
+    }
    
 
-}
 
 
 
@@ -136,6 +132,7 @@ header nav ul {
     font-size: 4vw;
     
 }
+
 .section-title {
     padding: 3vw;
     padding-left: 0;
@@ -153,18 +150,53 @@ header nav ul {
     background-color: var(--secondary-color);
         }
 
+.contact-me {
+    display: flex;
+    flex-flow: row wrap;
+justify-content: center;  
+ }
+
+.contact ul {
+    list-style-type: none;
+}
+
+.contact ul li {
+    text-align: center;
+
+}
+.contact ul li a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+}
 
     @media screen and (min-width: 575px) {
-        .portfolio {
+
+        .contact-me {
+            justify-content: flex-start;
+        }
+        .contact {
             
-            flex-direction: column;
-    }}
+            
+        }
+        }
 
     @media screen and (min-width: 768px) {
+        .about-me {
+            display: flex;
+            flex-direction: row;
+        }
         .portfolio {
-            
             flex-direction: row;
     }
+
+    .contact-me {
+        display: flex;
+        flex-direction: row;
+    }
+    .section-title {
+        width: 30%;
+    }
+       
     }
 
     @media screen and (min-width: 980px) {
@@ -175,7 +207,7 @@ header nav ul {
         } 
         .portfolio {
             
-            flex-direction: row;
+          
     }
     }
 
