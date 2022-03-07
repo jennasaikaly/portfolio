@@ -250,21 +250,18 @@ padding-top: 5vw 0vw;
         justify-content: space-around;
         }
     
-        .project {
-            margin: 1vw 0vw;
-        }
+       
     .small {
-        
-        max-width: 45%;
-        min-width: 45%;
-        height: 80px;
+        flex: 1 0 45%;
+
+        height: 15vh;
     }
 
     .small img {
         height: 100%;   
     }
     .large {
-        flex-grow: 1;
+        flex: 1 0 auto;
     }
 
     .contact-me {
@@ -274,7 +271,7 @@ padding-top: 5vw 0vw;
     }
 
     .contact {
-        width: 70%;
+       flex: 1 1 auto;
     }
     .contact ul {
         display:flex;
@@ -284,6 +281,7 @@ padding-top: 5vw 0vw;
         width: 30%;
         border-bottom: none;
         flex-shrink:0;
+        margin-right: 3vw;
 }
        
     }
