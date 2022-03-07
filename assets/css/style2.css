@@ -98,17 +98,35 @@ header nav ul {
     padding-left: 3vw;
     }
 
-    .section-title {
-        padding: 3vw;
-        padding-left: 0;
-        width:75%;
-        margin: 0;
-        margin-bottom: 1vw;
-        text-align: end;
-        border-right: 1px solid var(--tertiary-color); 
-        border-bottom: 1px solid var(--tertiary-color);
+.portfolio {
+    float: left;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-flow: column wrap;
+}
+.portfolio img {
+    max-width: 100%;
+    height: auto;
+    
+}
 
-        }
+.project::after {
+    content:"";
+    clear:both;
+    display: table;
+}
+
+.section-title {
+    padding: 3vw;
+    padding-left: 0;
+    width:75%;
+    margin: 0;
+    margin-bottom: 1vw;
+    text-align: end;
+    border-right: 1px solid var(--tertiary-color); 
+    border-bottom: 1px solid var(--tertiary-color);
+    }    
     
         .section-title h2 {
             padding-left: 10vw;
