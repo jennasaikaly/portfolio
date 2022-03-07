@@ -251,7 +251,8 @@ padding-top: 5vw;
     }
     .section-title {
         width: 30%;
-    }
+        border-bottom: none;
+}
        
     }
 
