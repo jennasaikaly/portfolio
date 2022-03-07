@@ -141,7 +141,6 @@ header nav ul {
 }
 
 
-
 .section-title {
     padding: 3vw;
     padding-left: 0;
@@ -162,7 +161,8 @@ header nav ul {
 .contact-me {
      
 scroll-margin-top: 10em;
-padding-top: 5vw;
+padding-top: 5vw 0vw;
+
 
 
  }
