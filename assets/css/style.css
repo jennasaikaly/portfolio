@@ -108,7 +108,7 @@ header nav ul {
     max-width: 100%;
     max-height: 30vw;
     position: relative;
-    color: var(--primary-color); 
+    
     margin: 5px;
     
 
@@ -123,21 +123,24 @@ header nav ul {
        max-width: 100%;
        min-width: 100%;  
        max-height: 30vw; 
-       border: 2px solid var(--secondary-color);   
+       border: 2px solid var(--tertiary-color);   
     }
 
 
 
 
 .location {
-    background-color: var(--secondary-color);
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color); 
+    padding: 2px 2px 2px 15px;
 
     
 }
+
 .bottom-left {
     position: absolute;
     bottom: 8px;
-    left: 16px;
+    left: 0px;
     font-size: 4vw;
     
 }
