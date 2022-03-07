@@ -87,13 +87,13 @@ header nav ul {
 
 
     .about-me {
-    padding: 20px;  
+    padding: 20px 00px 20px 0px;  
     scroll-margin-top: 10em;
     }
 
     .about {
     flex: 1 1 60%;
-    padding-left: 3vw;
+    padding: 5vw;
     }
 
     .portfolio {
