@@ -2,11 +2,13 @@
     --primary-color: rgb(206, 198, 198);
     --secondary-color: rgb(212, 73, 73);
     --tertiary-color: black;
-
 }
-* { box-sizing: border-box;
+
+* { 
+    box-sizing: border-box;
     margin: 0;
-    padding: 0;}
+    padding: 0;
+}
 
 body {
     background-color: var(--primary-color);
@@ -84,13 +86,7 @@ header nav ul {
 
 
     .about-me {
-    display:flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    padding-left: 0;
-    background-color: var(--primary-color);
+    padding: 20px;  
     }
 
     .about {
@@ -98,25 +94,48 @@ header nav ul {
     padding-left: 3vw;
     }
 
-.portfolio {
-    float: left;
+    .portfolio {
+        display: flex;
+        flex-direction:column;
+    }
+.projects {
     width: 100%;
+    margin: 0 auto;
     padding: 5px;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
 }
 .portfolio img {
     max-width: 100%;
-    height: auto;
+    max-height: 20vw;
+}
+
+.project {
+    max-width: 100%;
+    max-height: auto;
+    position: relative;
+    color: var(--primary-color); 
+   display: flex;
+   
+
+}
+
+
+
+.location {
+    background-color: var(--secondary-color);
+
     
 }
-
-.project::after {
-    content:"";
-    clear:both;
-    display: table;
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 4vw;
+    
 }
-
 .section-title {
     padding: 3vw;
     padding-left: 0;
@@ -136,96 +155,29 @@ header nav ul {
 
 
     @media screen and (min-width: 575px) {
-        header h1 {
-            padding-left: 10vw;
-            padding-right: 1vw;
-            background-color: var(--secondary-color);
-        }
-        header nav {
-           flex: 1 1 60%;
-           justify-content: space-between;
-           padding-left: 3vw;
-        }
-        header nav ul {
-            list-style-type: none;
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-between;
-            }
-        
-            header nav ul li {
-              
-                border-bottom: solid 1px var(--secondary-color);
-        
-            }
-        
-            header nav ul li a{
-                text-decoration: none;
-                color: var(--tertiary-color);
-            }   
-        
-            .hero {
-                width: 100%;
-                height: 150px;
-                background-image: url("../images/hero-bg.jpg");
-                background-color: var(--primary-color); /* Used if the image is unavailable */
-                background-position: center; /* Center the image */
-                background-repeat: no-repeat; /* Do not repeat the image */
-                background-size: cover; /* Resize the background image to cover the entire container */
-            }
-                
-            .hero-text {
-                justify-content: flex-end;
-                align-items: flex-end;
-                width: 100%;
-                height: 100%;
-                display: flex;
-                }
-        
-            .hero-text p {
-                color: var(--tertiary-color);
-                background-color: var(--secondary-color);
-                padding: 1vw;
-                margin-bottom: 1vw;
-                margin-right: 1vw;
-            }    
-        
-        
-        
-            .about-me {
-            display:flex;
-            flex-flow: row wrap;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            padding-left: 0;
-            background-color: var(--primary-color);
-            }
-        
-            .about {
-            flex: 1 1 60%;
-            padding-left: 3vw;
-            }
-        
-            .section-title {
-                padding: 3vw;
-                padding-left: 0;
-                width:30%;
-                margin: 0;
-                text-align: end;
-                }
+        .portfolio {
             
-                .section-title h2 {
-                    padding-left: 10vw;
-            padding-right: 1vw;
-            background-color: var(--secondary-color);
-                }
+            flex-direction: column;
+    }}
+
+    @media screen and (min-width: 768px) {
+        .portfolio {
+            
+            flex-direction: row;
     }
-    @media screen and (min-width: 768px) {}
+    }
+
     @media screen and (min-width: 980px) {
 
         header nav ul li a:hover{
             text-decoration: none;
             color: var(--secondary-color);
         } 
+        .portfolio {
+            
+            flex-direction: row;
     }
+    }
+
+
+
