@@ -132,17 +132,15 @@ header nav ul {
     background-color: var(--tertiary-color);
     color: var(--secondary-color); 
     padding: 2px 2px 2px 15px;
-
-    
-}
-
-.bottom-left {
     position: absolute;
     bottom: 8px;
     left: 0px;
-    font-size: 4vw;
+    font-size: 2vw;
+
     
 }
+
+
 
 .section-title {
     padding: 3vw;
@@ -246,6 +244,28 @@ padding-top: 5vw;
         .portfolio {
             flex-direction: row;
     }
+    .projects {
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        }
+    
+        .project {
+            margin: 1vw 0vw;
+        }
+    .small {
+        
+        max-width: 45%;
+        min-width: 45%;
+        height: 80px;
+    }
+
+    .small img {
+        height: 100%;   
+    }
+    .large {
+        flex-grow: 1;
+    }
 
     .contact-me {
         display: flex;
@@ -263,6 +283,7 @@ padding-top: 5vw;
     .section-title {
         width: 30%;
         border-bottom: none;
+        flex-shrink:0;
 }
        
     }
