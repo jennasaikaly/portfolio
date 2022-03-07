@@ -162,10 +162,9 @@ header nav ul {
         }
 
 .contact-me {
-    display: flex;
-    flex-flow: row wrap;
-justify-content: center;  
+     
 scroll-margin-top: 10em;
+padding: 20px 0px;
  }
 
  .contact {
