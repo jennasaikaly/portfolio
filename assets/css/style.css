@@ -118,10 +118,6 @@ header nav ul {
     
 }
 
-.metaportfolio {
-     
-}
-
 .project img {
        max-width: 100%;
        min-width: 100%;  
@@ -172,6 +168,12 @@ justify-content: center;
 scroll-margin-top: 10em;
  }
 
+ .contact {
+     padding: 5vw 0;
+     line-height: 1.5;
+     font-weight: bold;
+ }
+
 .contact ul {
     list-style-type: none;
 }
@@ -183,6 +185,7 @@ scroll-margin-top: 10em;
 .contact ul li a {
     text-decoration: none;
     color: var(--tertiary-color);
+
 }
 
     @media screen and (min-width: 575px) {
