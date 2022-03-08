@@ -114,12 +114,8 @@ header nav ul {
     max-width: 100%;
     max-height: 30vw;
     position: relative;
-    
     margin: 5px;
-    
-
-    
-}
+    }
 
 .project img {
        max-width: 100%;
@@ -134,15 +130,18 @@ header nav ul {
 .location {
     background-color: var(--tertiary-color);
     color: var(--secondary-color); 
-    padding: 2px 2px 2px 15px;
+    padding: 3px 3px 3px 15px;
     position: absolute;
     bottom: 8px;
     left: 0px;
     font-size: 2vw;
+    line-height: .7;
+   }
 
-    
-}
+   .language { 
+       font-size: 1.1vw;
 
+   }
 
 .section-title {
     padding: 3vw;
